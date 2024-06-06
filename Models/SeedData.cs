@@ -22,38 +22,44 @@ public static class SeedData
             context.Movie.AddRange(
                 new Movie
                 {
+                    Title = "Carry On jatta",
+                    ReleaseDate = DateTime.Parse("1989-2-12"),
+                    Genre = "Comedy",
+                    Price = 7.99M,
+                    Rating ="R"
+                },
+                new Movie
+                {
+                    Title = "Wanted ",
+                    ReleaseDate = DateTime.Parse("2010-3-13"),
+                    Genre = "Action",
+                    Price = 8.99M,
+                    Rating ="R"
+                },
+                new Movie
+                {
+                    Title = "Stupid 2",
+                    ReleaseDate = DateTime.Parse("1999-2-23"),
+                    Genre = "Comedy",
+                    Price = 9.99M,
+                    Rating ="R"
+                },
+                new Movie
+                {
                     Title = "Jatt and Julliet",
-                    ReleaseDate = DateTime.Parse("1999-2-12"),
-                    Genre = "Romantic Comedy",
-                    Rating = "R",
-                    Price = 7.99M
-                },
-                new Movie
-                {
-                    Title = "Jatt and Julliet 2 ",
-                    ReleaseDate = DateTime.Parse("1984-3-13"),
-                    Genre = "Comedy",
-                    Rating = "R",                   
-                    Price = 8.99M
-                },
-                new Movie
-                {
-                    Title = "Carry on Jatta",
-                    ReleaseDate = DateTime.Parse("1986-2-23"),
-                    Genre = "Comedy",
-                    Rating = "R",
-                    Price = 9.99M
-                },
-                new Movie
-                {
-                    Title = "Stupid 7",
                     ReleaseDate = DateTime.Parse("2000-4-15"),
                     Genre = "Comedy",
-                    Rating = "R",
-                    Price = 3.99M
+                    Price = 3.99M,
+                    Rating ="R"
+                },
+                new Movie
+                {
+                    Title = "Jatt and Julliet 2",
+                    ReleaseDate = DateTime.Parse("2010-4-17"),
+                    Genre = "Comedy",
+                    Price = 3.97M,
+                    Rating ="R"
                 }
-             
-                
             );
             context.SaveChanges();
         }
